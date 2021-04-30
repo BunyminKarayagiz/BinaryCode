@@ -6,25 +6,25 @@ public class Binarycode {
 			
 		Scanner scan=new Scanner(System.in);
 		System.out.print("Bir Sayi Giriniz:");
-		int Sayý=scan.nextInt();
+		int Sayi=scan.nextInt();
 		
 		ArrayList <String> list=new ArrayList<String>();
 		
-			while(Sayý>0) {
+			while(Sayi>0) {
 				
-				if(Sayý%2==1) {
+				if(Sayi%2==1) {
 					list.add("1");
 				}
 				
-				else if(Sayý%2==0) {
+				else if(Sayi%2==0) {
 					list.add("0");
 				}
 				
-				Sayý/=2;
+				Sayi/=2;
 			}
-			System.out.print("Girdiðiniz Sayinin Ýkilik Sistemdeki Hali:"+" ");
-		for(int dön=list.size()-1 ; dön>=0; dön-- ) {
-			System.out.print(list.get(dön));
+			System.out.print("GirdiÃ°iniz Sayinin Ikilik Sistemdeki Hali:"+" ");
+		for(int dÃ¶n=list.size()-1 ; dÃ¶n>=0; dÃ¶n-- ) {
+			System.out.print(list.get(dÃ¶n));
 		}
 	}
 
